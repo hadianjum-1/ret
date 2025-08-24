@@ -1,0 +1,289 @@
+:root {
+  --primary-color: #8b1e3f;
+  --Secondary-color: #d4a017;
+  --Tertiary-color: #faf7f2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Default for desktop */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu-icon {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* Tablet and large screens */
+  .Menu-icon {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 59px;
+    width: 100%;
+    height: 164px;
+    background-color: var(--Secondary-color);
+    transform: translateY(-1000px);
+  }
+
+  .show {
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .sec-1 {
+    display: none;
+  }
+
+  .items {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 24px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .ft {
+    margin: 181px auto 0;
+  }
+
+  .Men-S {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .Men-S a {
+    color: var(--Tertiary-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--Secondary-color);
+  }
+
+  .About {
+    display: none;
+  }
+
+  .baIn {
+    display: none;
+  }
+
+  .Re-T {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Re-T div {
+    color: var(--Tertiary-color);
+    font-size: 30px;
+  }
+
+  .Re-T a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--Secondary-color);
+    border-radius: 20px;
+    color: white;
+  }
+
+  .conF {
+    flex-direction: column;
+    margin: 34px auto;
+  }
+
+  .Tf {
+    display: none;
+  }
+
+  .Si-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .Sf {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .adf-1 {
+    margin-top: 5px;
+  }
+
+  .lines_R {
+    width: 100%;
+    margin: 41px auto;
+    position: relative;
+     display: block;
+  }
+
+  #line-Pr {
+    background-color: var(--Tertiary-color);
+    transform: rotate(3deg);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .line-1 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--Secondary-color);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet and small devices */
+  nav {
+    position: absolute;
+    top: 59px;
+    width: 100%;
+    background-color: var(--Secondary-color);
+    transform: translateY(-1000px);
+  }
+
+  .show {
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .Menu-icon {
+    display: block;
+  }
+
+  .sec-1, .About, .baIn {
+    display: none;
+  }
+
+  .Re-T {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Re-T div {
+    font-size: 24px;
+  }
+
+  .Re-T a {
+    padding: 8px 16px;
+  }
+
+  .Si-f {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Sf {
+    margin-top: 20px;
+  }
+
+  .lines_R {
+    width: 100%;
+    margin: 30px auto;
+     display: block;
+  }
+  
+
+  .line-1 {
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile devices */
+  nav {
+    position: absolute;
+    top: 59px;
+    width: 100%;
+    background-color: var(--Secondary-color);
+    transform: translateY(-1000px);
+  }
+
+  .show {
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+  }
+
+  .Menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .Re-T {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .Re-T div {
+    font-size: 18px;
+  }
+
+  .Re-T a {
+    padding: 8px 16px;
+  }
+
+  .Si-f {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Sf {
+    margin-top: 15px;
+  }
+
+  .lines_R {
+    margin: 20px auto;
+     display: block;
+  }
+
+  .line-1 {
+    height: 15px;
+  }
+
+  .ft {
+    margin: 100px auto;
+  }
+}
